@@ -1,0 +1,12 @@
+Vector desplazamiento
+\vec{s}
+Vector desplazamiento
+\vec{r}_1, \vec{r}_2
+vlor fisico en x, valor fisico en y
+0, 0
+2
+4
+40
+0
+1
+1

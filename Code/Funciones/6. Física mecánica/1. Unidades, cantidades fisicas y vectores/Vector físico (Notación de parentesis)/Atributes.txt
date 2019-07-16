@@ -1,0 +1,12 @@
+Vector físico (Notación de parentesis)
+\vec{v}
+Vector físico (Notación de parentesis)
+x, y, z
+valor fisico en x, valor fisico en y, valor fisico en z
+0, 0, 0
+2
+4
+36
+0
+1
+1

@@ -1,0 +1,3 @@
+function r = f(f,x,a,b)
+ r = integrate(string(f),string(x), a, b)
+endfunction

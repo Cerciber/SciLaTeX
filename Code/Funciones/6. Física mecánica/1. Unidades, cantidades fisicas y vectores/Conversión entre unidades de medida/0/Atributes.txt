@@ -1,0 +1,12 @@
+Valor con unidad de medida
+vum
+Valor con unidad de medida
+v, p, u
+Valor,  Prefijo, Unidad de medida
+0, 0, 0
+2
+4
+26
+0
+1
+0

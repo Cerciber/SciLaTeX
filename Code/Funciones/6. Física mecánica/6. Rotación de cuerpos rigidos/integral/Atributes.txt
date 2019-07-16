@@ -1,0 +1,11 @@
+integral
+I
+integral
+f(x), x, a, b
+f(x), x, a, b
+2
+25
+79
+1
+0
+1

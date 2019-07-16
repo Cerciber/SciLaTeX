@@ -1,0 +1,112 @@
+function r = convUnits(a,b,c)    
+    
+    num = strtod(a(1))
+    
+    // Conversión de longitudes
+    u = ["m", "ft", "in", "yd", "mi"];
+    if find(u == a(3)) <> [] & find(u == c) <> [] then
+        select a(3)
+            case "m" then   num = num
+            case "ft" then  num = num*0.3048
+            case "in" then  num = num*0.0254
+            case "yd" then  num = num*0.9144
+            case "mi" then  num = num*1609.34
+            end
+        select c
+            case "m" then   num = num;               a(3) = "m";
+            case "ft" then  num = num*3.28084;       a(3) = "ft";
+            case "in" then  num = num*39.3701;       a(3) = "in";
+            case "yd" then  num = num*1.09361;       a(3) = "yd";
+            case "mi" then  num = num*0.000621371;   a(3) = "mi";
+            end
+    end   
+     
+    // Conversión de masas
+    u = ["g", "lb", "oz", "t"];
+    if find(u == a(3)) <> [] & find(u == c) <> [] then
+        select a(3)
+            case "g" then   num = num
+            case "lb" then  num = num*453.592
+            case "oz" then  num = num*28.3495
+            case "t" then   num = num*1000000
+            end
+        select c
+            case "g" then   num = num;               a(3) = "g"
+            case "lb" then  num = num*0.00220462;    a(3) = "lb"
+            case "oz" then  num = num*0.035274;      a(3) = "oz"
+            case "t" then   num = num*0.000001;      a(3) = "t"
+            end
+     end   
+     
+     // Conversión de tiempos
+    u = ["s", "min", "h", "day"];
+    if find(u == a(3)) <> [] & find(u == c) <> [] then
+        select a(3)
+            case "s" then       num = num
+            case "min" then     num = num*60
+            case "h" then       num = num*3600
+            case "day" then     num = num*3600*24
+            end
+        select c
+            case "s" then       num = num;              a(3) = "s"
+            case "min" then     num = num/60;           a(3) = "min"
+            case "h" then       num = num/3600;         a(3) = "h"
+            case "day" then     num = num/(3600*24);    a(3) = "day"
+            end
+     end   
+     
+     // Conversión de prefijos
+     u = ["Y", "Z", "E", "P", "T", "G", "M", "k", "h", "da", "", "d", "c", "m", "\mu", "n", "p", "f", "a", "z", "y"];
+     if find(u == a(2)) <> [] & find(u == b) <> [] then
+        select a(2)
+            case "Y" then       num = num*10^24
+            case "Z" then       num = num*10^21
+            case "E" then       num = num*10^18
+            case "P" then       num = num*10^15
+            case "T" then       num = num*10^12
+            case "G" then       num = num*10^9
+            case "M" then       num = num*10^6
+            case "k" then       num = num*10^3
+            case "h" then       num = num*10^2
+            case "da" then      num = num*10^1
+            case "" then        num = num
+            case "d" then       num = num*10^-1
+            case "c" then       num = num*10^-2
+            case "m" then       num = num*10^-3
+            case "\mu" then     num = num*10^-6
+            case "n" then       num = num*10^-9
+            case "p" then       num = num*10^-12
+            case "f" then       num = num*10^-15
+            case "a" then       num = num*10^-18
+            case "z" then       num = num*10^-21
+            case "Y" then       num = num*10^-24
+            end
+        select b
+            case "s" then       num = num;              
+            case "Y" then       num = num*10^-24;         a(2) = "Y"
+            case "Z" then       num = num*10^-21;         a(2) = "Z"
+            case "E" then       num = num*10^-18;         a(2) = "E"
+            case "P" then       num = num*10^-15;         a(2) = "P"
+            case "T" then       num = num*10^-12;         a(2) = "T"
+            case "G" then       num = num*10^-9;          a(2) = "G"
+            case "M" then       num = num*10^-6;          a(2) = "M"
+            case "k" then       num = num*10^-3;          a(2) = "k"
+            case "h" then       num = num*10^-2;          a(2) = "h"
+            case "da" then      num = num*10^-1;          a(2) = "da"
+            case "" then        num = num;                a(2) = ""
+            case "d" then       num = num*10^1;           a(2) = "d"
+            case "c" then       num = num*10^2;           a(2) = "c"  
+            case "m" then       num = num*10^3;           a(2) = "m"
+            case "\mu" then     num = num*10^6;           a(2) = "\mu"
+            case "n" then       num = num*10^9;           a(2) = "n"
+            case "p" then       num = num*10^12;          a(2) = "p"
+            case "f" then       num = num*10^15;          a(2) = "f"
+            case "a" then       num = num*10^18;          a(2) = "a"
+            case "z" then       num = num*10^21;          a(2) = "z"
+            case "Y" then       num = num*10^24;          a(2) = "y"
+            end
+     end   
+     
+     a(1) = string(num)
+    r = a
+endfunction

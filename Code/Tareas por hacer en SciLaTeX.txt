@@ -1,0 +1,37 @@
+Tareas por hacer en SciLaTeX
+
+- Corregir no borrado de campo de nombre y vista de laTeX de salida en insertar función
+- Corregir error de no eliminación de nodo en el arbol
+- Corregir error de retardo al cargar una caja del arbol
+- corregir error de parametro al cargar una función con parametro vacio
+
+- Permitir dar click derecho a los botones y dar oprciones derecho
+	- Cambiar nombre del parametro
+- Permitir dar click derecho a las cajas de funciones y dar oprciones de
+	- Editar (Sin restringir parametros asignados)
+	- Guardar
+	- Renombrar función
+	- Renombrar archivo de función
+	- Reasginar descripción de la función
+	- Renombrar parametros
+	- Reasginar descripción de los parametros
+	- Ocultar/mostrar parametros
+	- Ocultar/mostrar parametros en el nombre de la función
+	- Asignar indicador a los parametros
+	- Reducir complejidad (Remplazar todas las funciones internas que estén resueltas por su constantes resultantes)
+
+- Mostrar errores matemáticos y de sintaxis de Scilab en pantalla
+- Mostrar infromación del panel derecho en menus desplegables
+- Mostrar codigo LaTeX de salida en el panel derecho
+- Mostrar descripción de los parametros al pasar el mouse
+
+- Permitir seleccionar una o varias funciones y permitir
+	- Copiar 
+	- Cortar
+	- Pegar
+	- Borrar
+
+- Permitir cambiar nombre de las carpetas
+- Permitir crear carpetas
+- Permitir mover carpetas y funciones entre el arbol
+- Permitir abrir abrir arbol en su ultimo estado de apertura

@@ -1,0 +1,12 @@
+Vector posición
+\vec{r}
+Vector posición
+x, y, z
+vlor fisico en x, valor fisico en y, valor fisico en z
+0, 0, 0
+2
+4
+40
+0
+1
+1

@@ -1,0 +1,3 @@
+function r = f(a,b,c)
+ r = [string(a), string(b), string(c)]
+endfunction

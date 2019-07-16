@@ -1,0 +1,12 @@
+Valor físico 2
+val
+Valor físico
+v_2, p_2, u_2
+Valor,  Prefijo, Unidad de medida
+0, 0, 0
+2
+4
+26
+0
+1
+1
